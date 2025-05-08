@@ -4,7 +4,7 @@ import { checkRole } from '../../../utils/roles'
 import { redirect } from 'next/navigation'
 
 
-async function Page() {
+async function Dashboard() {
     const user = await currentUser()
 
     if (!user){ 
@@ -22,4 +22,4 @@ async function Page() {
     
 }
 
-export default Page
+export default Dashboard
